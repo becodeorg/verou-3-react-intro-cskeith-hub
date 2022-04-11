@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
+  const testJsx = <h1>Hello World</h1>; // jsx
+  const testJsx1 = "<h1>Hello World</h1>";// not jsx its a string
+  const name = "Colin";
+  const title1 = <h1>Hello, {name}</h1>; // will print out title + const name
+  const title2 = <h1>Hello, name</h1>;
+  const name2 = "peter";
+  const morning = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {testJsx}
+    {testJsx1}
+    {title1}
+    {title2}
+    {title3}
+    </>
   );
 }
 
