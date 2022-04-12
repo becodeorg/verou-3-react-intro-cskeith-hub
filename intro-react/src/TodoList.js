@@ -1,15 +1,14 @@
 import React from 'react';
 
 export default function TodoList() {
-    const todo = ["Afwassen", "Auto Opruimen"];
+    const todos = ["Afwassen", "Auto Opruimen"];
   return (
     <ul>
-    <li>
-      <input type="checkbox" /> My first todo
-    </li>
-    <li>
-      <input type="checkbox" /> My second todo
-    </li>
+    {todos.map((todo) => (
+      <li>
+        <input type="checkbox" /> {todo}
+      </li>
+    ))}
   </ul>
   )
 }
