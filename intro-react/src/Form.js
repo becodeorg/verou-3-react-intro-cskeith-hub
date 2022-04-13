@@ -4,6 +4,10 @@ const Form = () => {
     const [NewTodo, setNewTodo] = useState({
         todo: ""
     });
+
+const handleChange = (event) => {
+    setContactInfo({ ...NewTodo, [event.target.todo]: event.target.value });
+    };
   return (
     <Form >
     <label >

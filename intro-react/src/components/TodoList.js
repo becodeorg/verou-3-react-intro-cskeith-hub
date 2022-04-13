@@ -14,8 +14,3 @@ export default function TodoList(props) {
   </ul>
   );
 }
-// {array.map((item)=>{
-//   return (
-//     <div key={item.id}>I am one Object in the Array {item}</div>
-//   )
-// })}
