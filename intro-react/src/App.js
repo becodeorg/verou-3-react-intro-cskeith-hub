@@ -11,6 +11,7 @@ function App() {
  if(name === '') 
   return
     console.log(name)
+    todoNameRef.current.value = null
  }
   return (
     <>
