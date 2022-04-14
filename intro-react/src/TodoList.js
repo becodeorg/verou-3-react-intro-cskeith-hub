@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TodoList() {
+function TodoList({todos}) {
   return (
-    <>
-    todo list
-    </>
+    <div>
+    {todos.length}
+    </div>
   )
 }
 
