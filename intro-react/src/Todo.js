@@ -1,9 +1,13 @@
 import React from 'react'
 
-function Todo() {
+function Todo({todo}) {
   return (
     <div>
-        Hello World
+        
+        <label>
+            <input type="checkbox" checked={todo.complete} />
+        {todo.name}
+        </label>
     </div>
   )
 }
