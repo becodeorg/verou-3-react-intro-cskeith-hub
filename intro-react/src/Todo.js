@@ -6,7 +6,9 @@ function Todo({todo}) {
         
         <label>
             <input type="checkbox" checked={todo.complete} />
-        {todo.name}
+         <div>
+         {todo.name}
+           </div>
         </label>
     </div>
   )
