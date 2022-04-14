@@ -1,5 +1,6 @@
 import {useState, useRef, useEffect} from "react";
 import TodoList from "./TodoList";
+import { v4 as uuidv4 } from 'uuid';
 
 
 function App() {
@@ -10,6 +11,9 @@ function App() {
  const name = todoNameRef.current.value
  if(name === '') 
   return
+  setTodos(prevTodos => {
+    return [...prevTodos, { id: uuidv4(), name: name, complete: true}
+    ]})
     console.log(name)
     todoNameRef.current.value = null
  }
