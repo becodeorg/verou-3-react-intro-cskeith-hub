@@ -8,8 +8,8 @@ function Todo({todo, toggleTodo}) {
     <div>
         
         <label>
-            <input type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
-         <div>
+            <input className='checkBox'  type="checkbox" checked={todo.complete} onChange={handleTodoClick} />
+         <div className='todo'>
          {todo.name}
            </div>
         </label>
