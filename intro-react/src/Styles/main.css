@@ -14,13 +14,18 @@ body {
   text-align: center;
 }
 
-#root .countTodo {
+#root .todoContainer {
+  border: 1px solid black;
+  width: 90%;
+}
+
+#root .todoContainer .countTodo {
   text-align: center;
   margin-bottom: 5%;
   text-decoration: underline;
 }
 
-#root .todoBox label {
+#root .todoContainer .todoBox label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,11 +33,24 @@ body {
   margin-bottom: 2%;
 }
 
-#root .todoBox label .checkBox {
+#root .todoContainer .todoBox label .checkBox {
   margin-left: 30%;
 }
 
-#root .inputField {
+#root .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#root .form .inputField {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,19 +61,11 @@ body {
   border-radius: 5px;
 }
 
-#root .addButton {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  border-radius: 5px;
-  margin-left: 20%;
-}
-
-#root .clearButton {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border-radius: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#root .form button {
+  margin: 1%;
+  width: 150px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=main.css.map */
