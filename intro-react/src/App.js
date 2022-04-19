@@ -1,7 +1,7 @@
 import {useState, useRef, useEffect} from "react";
 import TodoList from "./TodoList";
-import "./style.scss"
 import { v4 as uuidv4 } from 'uuid';
+import "./Styles/main.css"
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
