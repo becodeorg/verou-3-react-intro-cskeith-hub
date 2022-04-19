@@ -5,7 +5,7 @@ function Todo({todo, toggleTodo}) {
     toggleTodo(todo.id)
   }
   return (
-    <div>
+    <div className='todoBox'>
         
         <label>
             <input className='checkBox'  type="checkbox" checked={todo.complete} onChange={handleTodoClick} />

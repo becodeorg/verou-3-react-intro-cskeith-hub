@@ -44,11 +44,12 @@ function App() {
   return (
     <>
       <h1>Task Manager</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo}/>
       <div className="countTodo">{todos.filter(todo => !todo.complete).length} left to do</div>
-      <input ref={todoNameRef} type="text"></input>
-      <button onClick={handleAddTodo}>Add Todo</button>
-      <button onClick={handleClearTodos}>Clear Completed</button>
+
+      <TodoList todos={todos} toggleTodo={toggleTodo}/>
+      <input className="inputField" ref={todoNameRef} type="text"></input>
+      <button className="addButton" onClick={handleAddTodo}>Add Todo</button>
+      <button className="clearButton" onClick={handleClearTodos}>Clear Completed</button>
       
     </>
     
