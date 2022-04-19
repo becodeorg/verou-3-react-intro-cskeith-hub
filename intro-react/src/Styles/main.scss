@@ -1,50 +1,62 @@
-#root{
-    border:1px solid black;
-    background-color: cadetblue;
-
-    h1{
-        text-align: center;
-        // border: 1px solid rgb(115, 115, 38);
-    }
-
-    .countTodo{
-        text-align: center;
-        margin-bottom: 1rem;
-        text-decoration: underline;
-    }
-
-    .todoBox{
-        // border: 1px solid black;
-        label{
-            display: flex;
-            text-align: center;
-            margin-left: 3rem;
-            margin-top: 0.2rem;
-            margin-bottom: 0.2rem;
-        }
-    }
-
-    
-
-    .inputField{
-        display: flex;
-        margin-top: 1rem;
-        margin-left: 4rem;
-    }
-
-    .addButton{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 3rem;
-        border-radius: 5px;
-    }
-
-    .clearButton{
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 1rem;
-        border-radius: 5px;
-    }
+body {
+    margin: 0;
+    padding: 0;
 
 }
 
+#root {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    background-color: cadetblue;
+
+    h1 {
+        text-align: center;
+    }
+
+    .countTodo {
+        text-align: center;
+        margin-bottom: 5%;
+        text-decoration: underline;
+    }
+
+    .todoBox {
+
+        label {
+            display: flex;
+            margin-top: 2%;
+            margin-bottom: 2%;
+
+            .checkBox {
+                margin-left: 30%;
+            }
+        }
+    }
+
+
+
+    .inputField {
+        display: flex;
+        width: 60%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+    }
+
+    .addButton {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 5px;
+        margin-left: 20%;
+    }
+
+    .clearButton {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        border-radius: 5px;
+        justify-content: center;
+
+    }
+
+}
